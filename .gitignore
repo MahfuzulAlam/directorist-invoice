@@ -4,4 +4,5 @@ Thumbs.db
 *.zip
 /node_modules/
 /coverage/
+/dist/
 /.phpunit.result.cache

@@ -6,7 +6,7 @@
  * Description: Download PDF invoices for Directorist purchases and booking payments.
  * Author: wpXplore
  * Author URI: https://wpxplore.com
- * Version: 1.5.1
+ * Version: 1.5.2
  * Requires at least: 6.5
  * Requires PHP: 7.4
  * Requires Plugins: directorist
@@ -19,7 +19,7 @@ defined( 'ABSPATH' ) || exit;
 
 define( 'DIRECTORIST_INVOICE_PATH', plugin_dir_path( __FILE__ ) );
 define( 'DIRECTORIST_INVOICE_FILE', __FILE__ );
-define( 'DIRECTORIST_INVOICE_VERSION', '1.5.1' );
+define( 'DIRECTORIST_INVOICE_VERSION', '1.5.2' );
 
 /**
  * Prevent activation without an active Directorist installation.

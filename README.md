@@ -26,6 +26,8 @@ PDF invoices for purchases made with Directorist. Customers can view an invoice 
 
 The release package includes Dompdf and its dependencies. Activate Directorist before activating this extension.
 
+The release ZIP is compact: it includes the DejaVu Sans fonts used by invoices and omits unused PDF font families. Use the release ZIP for WordPress installation; a source checkout includes the full Dompdf distribution.
+
 ## Quick start
 
 1. In **Plugins → Add New → Upload Plugin**, upload the `directorist-invoice-<version>.zip` release package and activate it. You can also place the `directorist-invoice` folder in `wp-content/plugins/`.
@@ -42,6 +44,8 @@ PDFs are generated when someone opens or downloads them; the plugin does not sto
 View links open a PDF in a new browser tab. Download links save the PDF. Access requires a signed-in order owner or a user with permission to manage Directorist orders, and each PDF link is protected by a WordPress nonce.
 
 ## For developers
+
+Run `php scripts/build-release.php` to create a compact, installable ZIP in `dist/`. Pass an output filename as the first argument to write it elsewhere. The script requires PHP's Zip extension and checks that the package stays under 5 MB. Keep the bundled font licenses when updating Dompdf.
 
 - Business details can be changed with the `directorist_invoice_business` filter. Its array keys are `name`, `logo`, `address`, `email`, and `tax_id`.
 - PDF failures fire `directorist_invoice_pdf_error` with the exception. Customers see a generic error message.
