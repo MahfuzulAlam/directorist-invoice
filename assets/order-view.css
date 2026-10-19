@@ -1,0 +1,52 @@
+.directorist-invoice-action-pair,
+.directorist-invoice-order-actions {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+}
+
+.directorist-invoice-icon-link,
+.directorist-invoice-order-actions.is-icon-only a {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 32px;
+    height: 32px;
+    border: 1px solid #d0d5dd;
+    border-radius: 6px;
+    color: #344054;
+    background: #fff;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+.directorist-invoice-icon-link:hover,
+.directorist-invoice-icon-link:focus-visible,
+.directorist-invoice-order-actions.is-icon-only a:hover,
+.directorist-invoice-order-actions.is-icon-only a:focus-visible {
+    color: #175cd3;
+    border-color: #84caff;
+    background: #eff8ff;
+    outline: 2px solid transparent;
+}
+
+.directorist-invoice-icon-link:focus-visible,
+.directorist-invoice-order-actions.is-icon-only a:focus-visible {
+    outline: 2px solid #175cd3;
+    outline-offset: 2px;
+}
+
+.components-dropdown-menu__menu .directorist-invoice-menu-item {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    width: 100%;
+    color: inherit;
+    text-decoration: none;
+}
+
+.components-dropdown-menu__menu .directorist-invoice-menu-item i {
+    flex: 0 0 18px;
+    width: 18px;
+    text-align: center;
+}
